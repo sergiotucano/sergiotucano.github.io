@@ -29,13 +29,25 @@
             max-width: 800px;
             margin: 0 auto;
         }
-        .repo {
+        .repo, .tech {
             margin: 20px 0;
         }
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .card h3 {
+            margin-top: 0;
+        }
         a {
-            color: #fff;
+            color: #007bff;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: normal;
         }
         a:hover {
             text-decoration: underline;
@@ -48,6 +60,20 @@
             bottom: 0;
             width: 100%;
         }
+        .linkedin-link {
+            color: #fff;
+            font-weight: bold;
+        }
+        .tech-icons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .tech-icons .card img {
+            max-width: 80px;
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -57,25 +83,78 @@
     </header>
 
     <section>
+        <h2>Tecnologias que Uso</h2>
+        <div class="tech">
+            <div class="tech-icons">
+                <div class="card">
+                    <img src="https://img.icons8.com/color/96/html-5.png" alt="HTML">
+                    <h3>HTML</h3>
+                </div>
+                <div class="card">
+                    <img src="https://img.icons8.com/color/96/css3.png" alt="CSS">
+                    <h3>CSS</h3>
+                </div>
+                <div class="card">
+                    <img src="https://img.icons8.com/color/96/javascript.png" alt="JavaScript">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="card">
+                    <img src="https://img.icons8.com/color/96/php.png" alt="PHP">
+                    <h3>PHP</h3>
+                </div>
+                <div class="card">
+                    <img src="https://img.icons8.com/color/96/laravel.png" alt="Laravel">
+                    <h3>Laravel</h3>
+                </div>
+                <div class="card">
+                    <img src="https://img.icons8.com/color/96/java-coffee-cup-logo.png" alt="Java">
+                    <h3>Java</h3>
+                </div>
+                <div class="card">
+                    <img src="https://img.icons8.com/color/96/kotlin.png" alt="Kotlin">
+                    <h3>Kotlin</h3>
+                </div>
+                <div class="card">
+                    <img src="https://img.icons8.com/color/96/flutter.png" alt="Flutter">
+                    <h3>Dart/Flutter</h3>
+                </div>
+                <div class="card">
+                    <img src="https://img.icons8.com/color/96/react-native.png" alt="React-Native">
+                    <h3>React-Native</h3>
+                </div>
+                <div class="card">
+                    <img src="https://img.icons8.com/color/96/free-pascal.png" alt="Free Pascal">
+                    <h3>Free Pascal</h3>
+                </div>
+                <div class="card">
+                    <img src="https://img.icons8.com/color/96/python.png" alt="Python">
+                    <h3>Python</h3>
+                </div>
+            </div>
+        </div>
         <h2>Meus Repositórios</h2>
         <div class="repo">
-            <h3>Flutter</h3>
-            <p>
-                <a href="https://github.com/sergiotucano/digital_scale" target="_blank">Digital Scale</a>: Componente Flutter para comunicação com balanças.<br>
-                <a href="https://github.com/sergiotucano/roundabnt" target="_blank">RoundABNT</a>: Aplicativo Flutter para cálculos de arredondamento baseado na norma ABNT.<br>
-                <a href="https://github.com/sergiotucano/build_flutter_app" target="_blank">Build Flutter App</a>: Template para construção de aplicativos Flutter.
-            </p>
+            <div class="card">
+                <h3>Flutter</h3>
+                <p>
+                    <a href="https://github.com/sergiotucano/digital_scale" target="_blank">Digital Scale</a>: Componente do Flutter para ler pesos de balanças digitais<br>
+                    <a href="https://github.com/sergiotucano/roundabnt" target="_blank">RoundABNT</a>: Componente Flutter para cálculos de arredondamento baseado na norma ABNT.<br>
+                    <a href="https://github.com/sergiotucano/build_flutter_app" target="_blank">Build Flutter App</a>: Guia e template para construção de aplicativos Flutter.
+                </p>
+            </div>
         </div>
         <div class="repo">
-            <h3>React Native</h3>
-            <p>
-                <a href="https://github.com/sergiotucano/criar_react_native" target="_blank">Criar React Native</a>: Shell para criação de aplicações React-Native.
-            </p>
+            <div class="card">
+                <h3>React Native</h3>
+                <p>
+                    <a href="https://github.com/sergiotucano/criar_react_native" target="_blank">Criar React Native</a>: Template shell para desenvolvimento de aplicativos com React Native.
+                </p>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>Conecte-se comigo no <a href="https://www.linkedin.com/in/sergioclementefilho" target="_blank">LinkedIn</a></p>
+        <p>Conecte-se comigo no <a href="https://www.linkedin.com/in/sergioclementefilho" target="_blank" class="linkedin-link">LinkedIn</a></p>
     </footer>
 </body>
 </html>
