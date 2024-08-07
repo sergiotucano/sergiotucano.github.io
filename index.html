@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sergio Clemente - Desenvolvedor Full Stack</title>
     <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
         body {
             font-family: Arial, sans-serif;
             background: #f4f4f9;
             color: #333;
             text-align: center;
-            margin: 0;
-            padding: 0;
+            display: flex;
+            flex-direction: column;
         }
         header {
             background: #007bff;
@@ -28,6 +32,7 @@
             text-align: left;
             max-width: 800px;
             margin: 0 auto;
+            flex: 1;
         }
         .repo, .tech {
             margin: 20px 0;
@@ -56,10 +61,6 @@
             background: #007bff;
             color: #fff;
             padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            margin-top: 20px;
         }
         .linkedin-link {
             color: #fff;
