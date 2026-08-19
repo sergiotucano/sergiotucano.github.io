@@ -2,160 +2,205 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sergio Clemente - Desenvolvedor Full Stack com experiência em HTML, CSS, JavaScript, PHP, Laravel, Java, Kotlin, Dart/Flutter, React-Native, Free Pascal e Python. Veja meus repositórios e conecte-se no LinkedIn.">
-    <meta name="keywords" content="Desenvolvedor Full Stack, HTML, CSS, JavaScript, PHP, Laravel, Java, Kotlin, Dart, Flutter, React-Native, Free Pascal, Python, Repositórios, LinkedIn">
-    <meta name="author" content="Sergio Clemente">
-    <meta property="og:title" content="Sergio Clemente - Desenvolvedor Full Stack">
-    <meta property="og:description" content="Currículo online de Sergio Clemente, um desenvolvedor full stack com expertise em várias tecnologias. Confira meus projetos e conecte-se comigo.">
-    <meta property="og:url" content="http://sclemente.42web.io/">
-    <meta property="og:type" content="website">
-    <title>Sergio Clemente - Desenvolvedor Full Stack</title>
+    <title>Sérgio Tucano | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f9;
-            color: #333;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-        }
-        header {
-            background: #007bff;
-            color: #fff;
-            padding: 20px;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        section {
-            padding: 20px;
-            text-align: left;
-            max-width: 800px;
-            margin: 0 auto;
-            flex: 1;
-        }
-        .repo, .tech {
-            margin: 20px 0;
-        }
-        .card {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .card h3 {
-            margin-top: 0;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-            font-weight: normal;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            background: #007bff;
-            color: #fff;
-            padding: 10px;
-        }
-        .linkedin-link {
-            color: #fff;
-            font-weight: bold;
-        }
-        .tech-icons {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-        .tech-icons .card img {
-            max-width: 80px;
-            height: auto;
-        }
+        body { font-family: 'Inter', sans-serif; }
+        .lang-btn.active { border-bottom: 2px solid #3b82f6; color: #3b82f6; }
+        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
     </style>
 </head>
-<body>
-    <header>
-        <h1>Olá, eu sou Sergio Clemente!</h1>
-        <p>Desenvolvedor Full Stack</p>
+<body class="bg-slate-900 text-slate-200 min-h-screen transition-colors duration-300">
+
+    <!-- Header / Language Selector -->
+    <nav class="sticky top-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-xl font-bold bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
+                Sérgio Tucano
+            </span>
+            <div class="flex gap-4 text-sm font-medium">
+                <button onclick="setLang('ptBr')" id="btn-ptBr" class="lang-btn active transition-all">PT</button>
+                <button onclick="setLang('en')" id="btn-en" class="lang-btn transition-all">EN</button>
+                <button onclick="setLang('es')" id="btn-es" class="lang-btn transition-all">ES</button>
+                <button onclick="setLang('ch')" id="btn-ch" class="lang-btn transition-all">中文</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="max-w-5xl mx-auto px-6 py-20 text-center">
+        <h1 id="hero-title" class="text-5xl md:text-6xl font-extrabold mb-6 tracking-tight">
+            Desenvolvedor Fullstack
+        </h1>
+        <p id="hero-subtitle" class="text-xl text-slate-400 max-w-2xl mx-auto">
+            Especialista em Flutter e apaixonado por criar soluções eficientes para o ecossistema mobile e web.
+        </p>
+        <div class="mt-10 flex justify-center gap-6 text-2xl">
+            <a href="https://github.com/sergiotucano" class="hover:text-blue-400 transition-colors"><i class="fab fa-github"></i></a>
+            <a href="#" class="hover:text-blue-400 transition-colors"><i class="fab fa-linkedin"></i></a>
+        </div>
     </header>
 
-    <section>
-        <h2>Tecnologias que Uso</h2>
-        <div class="tech">
-            <div class="tech-icons">
-                <div class="card">
-                    <img src="https://img.icons8.com/color/96/html-5.png" alt="HTML">
-                    <h3>HTML</h3>
-                </div>
-                <div class="card">
-                    <img src="https://img.icons8.com/color/96/css3.png" alt="CSS">
-                    <h3>CSS</h3>
-                </div>
-                <div class="card">
-                    <img src="https://img.icons8.com/color/96/javascript.png" alt="JavaScript">
-                    <h3>JavaScript</h3>
-                </div>
-                <div class="card">
-                    <img src="https://img.icons8.com/color/96/php.png" alt="PHP">
-                    <h3>PHP</h3>
-                </div>            
-                <div class="card">
-                    <img src="https://img.icons8.com/color/96/java-coffee-cup-logo.png" alt="Java">
-                    <h3>Java</h3>
-                </div>
-                <div class="card">
-                    <img src="https://img.icons8.com/color/96/kotlin.png" alt="Kotlin">
-                    <h3>Kotlin</h3>
-                </div>
-                <div class="card">
-                    <img src="https://img.icons8.com/color/96/flutter.png" alt="Flutter">
-                    <h3>Dart/Flutter</h3>
-                </div>
-                <div class="card">
-                    <img src="https://img.icons8.com/color/96/react-native.png" alt="React-Native">
-                    <h3>React-Native</h3>
-                </div>            
-                <div class="card">
-                    <img src="https://img.icons8.com/color/96/python.png" alt="Python">
-                    <h3>Python</h3>
-                </div>
-            </div>
-        </div>
-        <h2>Meus Repositórios</h2>
-        <div class="repo">
-            <div class="card">
-                <h3><a href="https://github.com/sergiotucano/digital_scale" target="_blank">Digital Scale</a></h3>
-                <p>Componente do Flutter para ler pesos de balanças digitais.</p>
-            </div>
-            <div class="card">
-                <h3><a href="https://github.com/sergiotucano/roundabnt" target="_blank">RoundABNT</a></h3>
-                <p>Componente Flutter para cálculos de arredondamento baseado na norma ABNT.</p>
-            </div>
-            <div class="card">
-                <h3><a href="https://github.com/sergiotucano/build_flutter_app" target="_blank">Build Flutter App</a></h3>
-                <p>Guia e template para construção de aplicativos Flutter.</p>
-            </div>
-            <div class="card">
-                <h3><a href="https://github.com/sergiotucano/criar_react_native" target="_blank">Criar React Native</a></h3>
-                <p>Template shell para desenvolvimento de aplicativos com React Native.</p>
-            </div>
-        </div>
-    </section>
+    <!-- Projects Grid -->
+    <main class="max-w-5xl mx-auto px-6 pb-24">
+        <h2 id="projects-title" class="text-2xl font-bold mb-10 flex items-center gap-3">
+            <span class="w-8 h-1 bg-blue-500 rounded-full"></span>
+            Repositórios & Plugins
+        </h2>
 
-    <footer>
-        <p>Conecte-se comigo no <a href="https://www.linkedin.com/in/sergioclementefilho" target="_blank" class="linkedin-link">LinkedIn</a></p>
+        <div class="grid md:grid-cols-2 gap-6">
+            
+            <!-- Project 1: Digital Scale -->
+            <div class="glass p-8 rounded-2xl hover:bg-slate-800/50 transition-all group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 bg-blue-500/10 rounded-lg text-blue-400">
+                        <i class="fas fa-weight-hanging text-2xl"></i>
+                    </div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-slate-500">Flutter / Dart</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Digital Scale</h3>
+                <p id="desc-scale" class="text-slate-400 mb-6 text-sm leading-relaxed">
+                    Componente do Flutter para ler pesos de balanças digitais diretamente no seu aplicativo.
+                </p>
+                <div class="flex gap-3">
+                    <a href="https://github.com/sergiotucano/digital_scale" class="flex-1 py-2 px-4 bg-slate-700 hover:bg-slate-600 rounded-lg text-center text-sm font-semibold transition-colors">
+                        <i class="fab fa-github mr-2"></i> GitHub
+                    </a>
+                    <a href="https://pub.dev/packages/digital_scale" class="flex-1 py-2 px-4 bg-blue-600 hover:bg-blue-500 rounded-lg text-center text-sm font-semibold transition-colors">
+                        <i class="fas fa-box mr-2"></i> Pub.dev
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2: RoundABNT -->
+            <div class="glass p-8 rounded-2xl hover:bg-slate-800/50 transition-all group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 bg-emerald-500/10 rounded-lg text-emerald-400">
+                        <i class="fas fa-calculator text-2xl"></i>
+                    </div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-slate-500">Flutter / Dart</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2">RoundABNT</h3>
+                <p id="desc-round" class="text-slate-400 mb-6 text-sm leading-relaxed">
+                    Cálculos de arredondamento precisos baseados na norma técnica ABNT NBR 5891.
+                </p>
+                <div class="flex gap-3">
+                    <a href="https://github.com/sergiotucano/roundabnt" class="flex-1 py-2 px-4 bg-slate-700 hover:bg-slate-600 rounded-lg text-center text-sm font-semibold transition-colors">
+                        <i class="fab fa-github mr-2"></i> GitHub
+                    </a>
+                    <a href="https://pub.dev/packages/roundabnt" class="flex-1 py-2 px-4 bg-blue-600 hover:bg-blue-500 rounded-lg text-center text-sm font-semibold transition-colors">
+                        <i class="fas fa-box mr-2"></i> Pub.dev
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 3: Build Flutter App -->
+            <div class="glass p-8 rounded-2xl hover:bg-slate-800/50 transition-all">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 bg-purple-500/10 rounded-lg text-purple-400">
+                        <i class="fas fa-rocket text-2xl"></i>
+                    </div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-slate-500">Guide / Template</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Build Flutter App</h3>
+                <p id="desc-build" class="text-slate-400 mb-6 text-sm leading-relaxed">
+                    Guia e template completo para construção de aplicativos Flutter robustos e escaláveis.
+                </p>
+                <a href="https://github.com/sergiotucano/build_flutter_app" class="block w-full py-2 px-4 bg-slate-700 hover:bg-slate-600 rounded-lg text-center text-sm font-semibold transition-colors">
+                    <i class="fab fa-github mr-2"></i> GitHub
+                </a>
+            </div>
+
+            <!-- Project 4: Criar React Native -->
+            <div class="glass p-8 rounded-2xl hover:bg-slate-800/50 transition-all">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 bg-cyan-500/10 rounded-lg text-cyan-400">
+                        <i class="fab fa-react text-2xl"></i>
+                    </div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-slate-500">Shell Script</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Criar React Native</h3>
+                <p id="desc-rn" class="text-slate-400 mb-6 text-sm leading-relaxed">
+                    Template shell para automatizar e acelerar o desenvolvimento de apps com React Native.
+                </p>
+                <a href="https://github.com/sergiotucano/criar_react_native" class="block w-full py-2 px-4 bg-slate-700 hover:bg-slate-600 rounded-lg text-center text-sm font-semibold transition-colors">
+                    <i class="fab fa-github mr-2"></i> GitHub
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="max-w-5xl mx-auto px-6 py-12 border-t border-slate-800 text-center text-slate-500 text-sm">
+        <p>© <span id="year"></span> Sérgio Tucano. Developed with ❤️ & Flutter.</p>
     </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const translations = {
+            ptBr: {
+                heroTitle: "Desenvolvedor Fullstack",
+                heroSubtitle: "Especialista em Flutter e apaixonado por criar soluções eficientes para o ecossistema mobile e web.",
+                projectsTitle: "Repositórios & Plugins",
+                descScale: "Componente do Flutter para ler pesos de balanças digitais diretamente no seu aplicativo.",
+                descRound: "Cálculos de arredondamento precisos baseados na norma técnica ABNT NBR 5891.",
+                descBuild: "Guia e template completo para construção de aplicativos Flutter robustos e escaláveis.",
+                descRn: "Template shell para automatizar e acelerar o desenvolvimento de apps com React Native."
+            },
+            en: {
+                heroTitle: "Fullstack Developer",
+                heroSubtitle: "Flutter specialist passionate about building efficient solutions for the mobile and web ecosystem.",
+                projectsTitle: "Repositories & Plugins",
+                descScale: "Flutter component to read weights from digital scales directly in your application.",
+                descRound: "Precise rounding calculations based on the ABNT NBR 5891 technical standard.",
+                descBuild: "Complete guide and template for building robust and scalable Flutter applications.",
+                descRn: "Shell template to automate and accelerate React Native app development."
+            },
+            es: {
+                heroTitle: "Desarrollador Fullstack",
+                heroSubtitle: "Especialista en Flutter apasionado por crear soluciones eficientes para el ecosistema móvil y web.",
+                projectsTitle: "Repositorios y Plugins",
+                descScale: "Componente Flutter para leer pesos de balanzas digitales directamente en su aplicación.",
+                descRound: "Cálculos de redondeo precisos basados en la norma técnica ABNT NBR 5891.",
+                descBuild: "Guía y plantilla completa para crear aplicaciones Flutter robustas y escalables.",
+                descRn: "Plantilla de shell para automatizar y acelerar el desarrollo de aplicaciones React Native."
+            },
+            ch: {
+                heroTitle: "全栈开发者",
+                heroSubtitle: "Flutter 专家，致力于为移动和 Web 生态系统构建高效的解决方案。",
+                projectsTitle: "代码库与插件",
+                descScale: "用于直接在应用程序中读取电子秤重量的 Flutter 组件。",
+                descRound: "基于 ABNT NBR 5891 技术标准的精确舍入计算。",
+                descBuild: "构建强大且可扩展的 Flutter 应用程序的完整指南和模板。",
+                descRn: "用于自动化和加速 React Native 应用开发的 Shell 模板。"
+            }
+        };
+
+        function setLang(lang) {
+            // Update Text
+            document.getElementById('hero-title').innerText = translations[lang].heroTitle;
+            document.getElementById('hero-subtitle').innerText = translations[lang].heroSubtitle;
+            document.getElementById('projects-title').innerText = translations[lang].projectsTitle;
+            document.getElementById('desc-scale').innerText = translations[lang].descScale;
+            document.getElementById('desc-round').innerText = translations[lang].descRound;
+            document.getElementById('desc-build').innerText = translations[lang].descBuild;
+            document.getElementById('desc-rn').innerText = translations[lang].descRn;
+
+            // Update Buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById('btn-' + lang).classList.add('active');
+            
+            // Save preference
+            localStorage.setItem('preferredLang', lang);
+        }
+
+        // Auto-detect language or use stored preference
+        const savedLang = localStorage.getItem('preferredLang') || 'ptBr';
+        setLang(savedLang);
+    </script>
 </body>
 </html>
