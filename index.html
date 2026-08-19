@@ -31,18 +31,30 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="max-w-5xl mx-auto px-6 py-20 text-center">
+    <header class="max-w-5xl mx-auto px-6 pt-20 pb-10 text-center">
         <h1 id="hero-title" class="text-5xl md:text-6xl font-extrabold mb-6 tracking-tight">
             Desenvolvedor Fullstack
         </h1>
-        <p id="hero-subtitle" class="text-xl text-slate-400 max-w-2xl mx-auto">
-            Especialista em Flutter e apaixonado por criar soluções eficientes para o ecossistema mobile e web.
-        </p>
-        <div class="mt-10 flex justify-center gap-6 text-2xl">
-            <a href="https://github.com/sergiotucano" class="hover:text-blue-400 transition-colors"><i class="fab fa-github"></i></a>
-            <a href="#" class="hover:text-blue-400 transition-colors"><i class="fab fa-linkedin"></i></a>
+        <div class="mt-6 flex justify-center gap-6 text-2xl">
+            <a href="https://github.com/sergiotucano" target="_blank" class="hover:text-blue-400 transition-colors"><i class="fab fa-github"></i></a>
+            <a href="https://br.linkedin.com/in/sergioclementefilho" target="_blank" class="hover:text-blue-400 transition-colors"><i class="fab fa-linkedin"></i></a>
+            <a href="http://lattes.cnpq.br/3797817288097215" target="_blank" class="hover:text-blue-400 transition-colors"><i class="fas fa-graduation-cap"></i></a>
         </div>
     </header>
+
+    <!-- About Section -->
+    <section class="max-w-3xl mx-auto px-6 py-10 text-center">
+        <div class="glass p-8 rounded-3xl border border-blue-500/20">
+            <h2 id="about-title" class="text-xl font-semibold mb-4 text-blue-400">Sobre mim</h2>
+            <p id="about-text" class="text-slate-300 leading-relaxed italic">
+                Desenvolvedor Fullstack com sólida experiência em arquitetura mobile, focado em Flutter e no ecossistema Dart. Criador de plugins para a comunidade e entusiasta de soluções escaláveis. Além da atuação técnica, mantenho uma trajetória acadêmica e de pesquisa registrada no CNPq.
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-800 flex justify-center items-center gap-2 text-xs text-slate-500 uppercase tracking-widest">
+                <span>Lattes ID:</span>
+                <a href="http://lattes.cnpq.br/3797817288097215" target="_blank" class="text-blue-400 hover:underline">3797817288097215</a>
+            </div>
+        </div>
+    </section>
 
     <!-- Projects Grid -->
     <main class="max-w-5xl mx-auto px-6 pb-24">
@@ -52,7 +64,6 @@
         </h2>
 
         <div class="grid md:grid-cols-2 gap-6">
-            
             <!-- Project 1: Digital Scale -->
             <div class="glass p-8 rounded-2xl hover:bg-slate-800/50 transition-all group">
                 <div class="flex justify-between items-start mb-4">
@@ -66,10 +77,10 @@
                     Componente do Flutter para ler pesos de balanças digitais diretamente no seu aplicativo.
                 </p>
                 <div class="flex gap-3">
-                    <a href="https://github.com/sergiotucano/digital_scale" class="flex-1 py-2 px-4 bg-slate-700 hover:bg-slate-600 rounded-lg text-center text-sm font-semibold transition-colors">
+                    <a href="https://github.com/sergiotucano/digital_scale" target="_blank" class="flex-1 py-2 px-4 bg-slate-700 hover:bg-slate-600 rounded-lg text-center text-sm font-semibold transition-colors">
                         <i class="fab fa-github mr-2"></i> GitHub
                     </a>
-                    <a href="https://pub.dev/packages/digital_scale" class="flex-1 py-2 px-4 bg-blue-600 hover:bg-blue-500 rounded-lg text-center text-sm font-semibold transition-colors">
+                    <a href="https://pub.dev/packages/digital_scale" target="_blank" class="flex-1 py-2 px-4 bg-blue-600 hover:bg-blue-500 rounded-lg text-center text-sm font-semibold transition-colors">
                         <i class="fas fa-box mr-2"></i> Pub.dev
                     </a>
                 </div>
@@ -88,49 +99,27 @@
                     Cálculos de arredondamento precisos baseados na norma técnica ABNT NBR 5891.
                 </p>
                 <div class="flex gap-3">
-                    <a href="https://github.com/sergiotucano/roundabnt" class="flex-1 py-2 px-4 bg-slate-700 hover:bg-slate-600 rounded-lg text-center text-sm font-semibold transition-colors">
+                    <a href="https://github.com/sergiotucano/roundabnt" target="_blank" class="flex-1 py-2 px-4 bg-slate-700 hover:bg-slate-600 rounded-lg text-center text-sm font-semibold transition-colors">
                         <i class="fab fa-github mr-2"></i> GitHub
                     </a>
-                    <a href="https://pub.dev/packages/roundabnt" class="flex-1 py-2 px-4 bg-blue-600 hover:bg-blue-500 rounded-lg text-center text-sm font-semibold transition-colors">
+                    <a href="https://pub.dev/packages/roundabnt" target="_blank" class="flex-1 py-2 px-4 bg-blue-600 hover:bg-blue-500 rounded-lg text-center text-sm font-semibold transition-colors">
                         <i class="fas fa-box mr-2"></i> Pub.dev
                     </a>
                 </div>
             </div>
 
-            <!-- Project 3: Build Flutter App -->
+            <!-- Outros projetos... -->
             <div class="glass p-8 rounded-2xl hover:bg-slate-800/50 transition-all">
-                <div class="flex justify-between items-start mb-4">
-                    <div class="p-3 bg-purple-500/10 rounded-lg text-purple-400">
-                        <i class="fas fa-rocket text-2xl"></i>
-                    </div>
-                    <span class="text-xs font-bold uppercase tracking-widest text-slate-500">Guide / Template</span>
-                </div>
                 <h3 class="text-xl font-bold mb-2">Build Flutter App</h3>
-                <p id="desc-build" class="text-slate-400 mb-6 text-sm leading-relaxed">
-                    Guia e template completo para construção de aplicativos Flutter robustos e escaláveis.
-                </p>
-                <a href="https://github.com/sergiotucano/build_flutter_app" class="block w-full py-2 px-4 bg-slate-700 hover:bg-slate-600 rounded-lg text-center text-sm font-semibold transition-colors">
-                    <i class="fab fa-github mr-2"></i> GitHub
-                </a>
+                <p id="desc-build" class="text-slate-400 mb-6 text-sm leading-relaxed">Guia e template para construção de apps Flutter.</p>
+                <a href="https://github.com/sergiotucano/build_flutter_app" target="_blank" class="block w-full py-2 px-4 bg-slate-700 hover:bg-slate-600 rounded-lg text-center text-sm font-semibold">GitHub</a>
             </div>
 
-            <!-- Project 4: Criar React Native -->
             <div class="glass p-8 rounded-2xl hover:bg-slate-800/50 transition-all">
-                <div class="flex justify-between items-start mb-4">
-                    <div class="p-3 bg-cyan-500/10 rounded-lg text-cyan-400">
-                        <i class="fab fa-react text-2xl"></i>
-                    </div>
-                    <span class="text-xs font-bold uppercase tracking-widest text-slate-500">Shell Script</span>
-                </div>
                 <h3 class="text-xl font-bold mb-2">Criar React Native</h3>
-                <p id="desc-rn" class="text-slate-400 mb-6 text-sm leading-relaxed">
-                    Template shell para automatizar e acelerar o desenvolvimento de apps com React Native.
-                </p>
-                <a href="https://github.com/sergiotucano/criar_react_native" class="block w-full py-2 px-4 bg-slate-700 hover:bg-slate-600 rounded-lg text-center text-sm font-semibold transition-colors">
-                    <i class="fab fa-github mr-2"></i> GitHub
-                </a>
+                <p id="desc-rn" class="text-slate-400 mb-6 text-sm leading-relaxed">Template shell para desenvolvimento em React Native.</p>
+                <a href="https://github.com/sergiotucano/criar_react_native" target="_blank" class="block w-full py-2 px-4 bg-slate-700 hover:bg-slate-600 rounded-lg text-center text-sm font-semibold">GitHub</a>
             </div>
-
         </div>
     </main>
 
@@ -144,7 +133,8 @@
         const translations = {
             ptBr: {
                 heroTitle: "Desenvolvedor Fullstack",
-                heroSubtitle: "Especialista em Flutter e apaixonado por criar soluções eficientes para o ecossistema mobile e web.",
+                aboutTitle: "Sobre mim",
+                aboutText: "Desenvolvedor Fullstack com sólida experiência em arquitetura mobile, focado em Flutter e no ecossistema Dart. Criador de plugins para a comunidade e entusiasta de soluções escaláveis. Além da atuação técnica, mantenho uma trajetória acadêmica e de pesquisa registrada no CNPq.",
                 projectsTitle: "Repositórios & Plugins",
                 descScale: "Componente do Flutter para ler pesos de balanças digitais diretamente no seu aplicativo.",
                 descRound: "Cálculos de arredondamento precisos baseados na norma técnica ABNT NBR 5891.",
@@ -153,7 +143,8 @@
             },
             en: {
                 heroTitle: "Fullstack Developer",
-                heroSubtitle: "Flutter specialist passionate about building efficient solutions for the mobile and web ecosystem.",
+                aboutTitle: "About Me",
+                aboutText: "Fullstack Developer with solid experience in mobile architecture, focused on Flutter and the Dart ecosystem. Community plugin creator and scalable solutions enthusiast. In addition to technical work, I maintain an academic and research path registered at CNPq.",
                 projectsTitle: "Repositories & Plugins",
                 descScale: "Flutter component to read weights from digital scales directly in your application.",
                 descRound: "Precise rounding calculations based on the ABNT NBR 5891 technical standard.",
@@ -162,7 +153,8 @@
             },
             es: {
                 heroTitle: "Desarrollador Fullstack",
-                heroSubtitle: "Especialista en Flutter apasionado por crear soluciones eficientes para el ecosistema móvil y web.",
+                aboutTitle: "Sobre mí",
+                aboutText: "Desarrollador Fullstack con sólida experiencia en arquitectura móvil, centrado en Flutter y el ecosistema Dart. Creador de plugins para la comunidad y entusiasta de soluciones escalables. Además de mi labor técnica, mantengo una trayectoria académica y de investigación registrada en el CNPq.",
                 projectsTitle: "Repositorios y Plugins",
                 descScale: "Componente Flutter para leer pesos de balanzas digitales directamente en su aplicación.",
                 descRound: "Cálculos de redondeo precisos basados en la norma técnica ABNT NBR 5891.",
@@ -171,7 +163,8 @@
             },
             ch: {
                 heroTitle: "全栈开发者",
-                heroSubtitle: "Flutter 专家，致力于为移动和 Web 生态系统构建高效的解决方案。",
+                aboutTitle: "关于我",
+                aboutText: "全栈开发者，在移动架构方面拥有丰富的经验，专注于 Flutter 和 Dart 生态系统。社区插件创建者和可扩展解决方案爱好者。除了技术工作外，我还拥有在 CNPq 注册的学术和研究经历。",
                 projectsTitle: "代码库与插件",
                 descScale: "用于直接在应用程序中读取电子秤重量的 Flutter 组件。",
                 descRound: "基于 ABNT NBR 5891 技术标准的精确舍入计算。",
@@ -181,24 +174,20 @@
         };
 
         function setLang(lang) {
-            // Update Text
             document.getElementById('hero-title').innerText = translations[lang].heroTitle;
-            document.getElementById('hero-subtitle').innerText = translations[lang].heroSubtitle;
+            document.getElementById('about-title').innerText = translations[lang].aboutTitle;
+            document.getElementById('about-text').innerText = translations[lang].aboutText;
             document.getElementById('projects-title').innerText = translations[lang].projectsTitle;
             document.getElementById('desc-scale').innerText = translations[lang].descScale;
             document.getElementById('desc-round').innerText = translations[lang].descRound;
             document.getElementById('desc-build').innerText = translations[lang].descBuild;
             document.getElementById('desc-rn').innerText = translations[lang].descRn;
 
-            // Update Buttons
             document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
             document.getElementById('btn-' + lang).classList.add('active');
-            
-            // Save preference
             localStorage.setItem('preferredLang', lang);
         }
 
-        // Auto-detect language or use stored preference
         const savedLang = localStorage.getItem('preferredLang') || 'ptBr';
         setLang(savedLang);
     </script>
